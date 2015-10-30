@@ -1,0 +1,13 @@
+<?php
+$person = $_GET['person'];
+$connection = new MongoClient("localhost:27017");
+$db = $connection->selectDB('test'); 
+$collection = $db->phonebook;
+
+
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+print_r($age);
+
+?>
